@@ -1,0 +1,15 @@
+The Strategy design pattern is a behavioral design pattern that allows you to define a family of algorithms, encapsulate each one of them, and make them interchangeable. This pattern lets the algorithm vary independently from clients that use it.
+
+Key Components
+Strategy Interface: This interface defines a method that all supported algorithms should implement.
+Concrete Strategies: These are classes that implement the Strategy interface. Each class encapsulates an algorithm or a specific behavior.
+Context: This class is configured with a Concrete Strategy object. It doesn't know about specific strategy implementations, only that it should call the algorithm defined by a strategy.
+
+Benefits of the Strategy Pattern
+Open/Closed Principle: You can introduce new strategies without changing the context or other strategies.
+Flexibility: You can change strategies at runtime.
+Separation of Concerns: The context is not burdened with multiple algorithm implementations.
+
+When to Use
+When you have multiple algorithms for a specific task and you want to switch between them easily.
+When you want to avoid using conditional statements for selecting and executing different behaviors.
